@@ -106,12 +106,13 @@ fun BarChart(
         verticalAlignment = Alignment.Bottom,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
+        //sum of chart lines
         val listSum by remember {
             mutableStateOf(inputList.sumOf { it.value })
         }
         inputList.forEach { input ->
             val percentage = input.value / listSum.toFloat()
-
+            
             Bar(
                 modifier = Modifier
                     .height(120.dp * percentage * inputList.size)
@@ -162,7 +163,7 @@ fun Bar(
                     colors = listOf(gray, primaryColor)
                 )
             )
-
+            //here is starting 3D draw
             path = Path().apply {
                 moveTo(barWidth, height - barHeight)
                 lineTo(barWidth3DPart + barWidth, 0f)
@@ -221,7 +222,7 @@ fun Bar(
         }
     }
 }
-
+//defining model of barchart input
 data class BarChartInput(
     val value: Int,
     val description: String,
