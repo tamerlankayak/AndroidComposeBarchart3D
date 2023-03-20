@@ -8,5 +8,4 @@ Andrroid Jetpack Compose
 Here is example of screen:
 
 ![Screenshot_20230306_182720](https://user-images.githubusercontent.com/29164777/223152557-b7b24fe5-c53d-4e41-8ded-28de7fddcfcc.png)
-
 ![3bbebda874e6003b_960](https://user-images.githubusercontent.com/29164777/226410652-84b09cc1-d118-4306-a494-5fc18ddf42ac.png)
